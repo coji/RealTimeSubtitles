@@ -13,6 +13,7 @@
 		E310C1112C32B03800B22941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E310C1102C32B03800B22941 /* Assets.xcassets */; };
 		E310C1142C32B03800B22941 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E310C1132C32B03800B22941 /* Preview Assets.xcassets */; };
 		E310C11F2C32B03800B22941 /* RealTimeSubtitlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310C11E2C32B03800B22941 /* RealTimeSubtitlesTests.swift */; };
+		E310C1292C32B05900B22941 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310C1282C32B05900B22941 /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		E310C1152C32B03800B22941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E310C11A2C32B03800B22941 /* RealTimeSubtitlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeSubtitlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E310C11E2C32B03800B22941 /* RealTimeSubtitlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeSubtitlesTests.swift; sourceTree = "<group>"; };
+		E310C1282C32B05900B22941 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E310C1102C32B03800B22941 /* Assets.xcassets */,
 				E310C1152C32B03800B22941 /* Info.plist */,
 				E310C1122C32B03800B22941 /* Preview Content */,
+				E310C1282C32B05900B22941 /* SpeechRecognizer.swift */,
 			);
 			path = RealTimeSubtitles;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				E310C10F2C32B03600B22941 /* ContentView.swift in Sources */,
 				E310C10D2C32B03600B22941 /* RealTimeSubtitlesApp.swift in Sources */,
+				E310C1292C32B05900B22941 /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

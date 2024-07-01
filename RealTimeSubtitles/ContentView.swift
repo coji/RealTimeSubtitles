@@ -6,18 +6,37 @@
 //
 
 import SwiftUI
-import RealityKit
-import RealityKitContent
 
 struct ContentView: View {
+    @StateObject private var speechRecognizer = SpeechRecognizer()
+
     var body: some View {
         VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
+            Text(speechRecognizer.recognizedText)
+                .padding()
+                .background(Color.black.opacity(0.7))
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .padding()
 
-            Text("Hello, world!")
+            Button(action: {
+                speechRecognizer.startRecognition()
+            }) {
+                Text("Start Recognition")
+            }
+
+            Button(action: {
+                speechRecognizer.stopRecognition()
+            }) {
+                Text("Stop Recognition")
+            }
         }
-        .padding()
+        .onAppear {
+            speechRecognizer.startRecognition()
+        }
+        .onDisappear {
+            speechRecognizer.stopRecognition()
+        }
     }
 }
 
