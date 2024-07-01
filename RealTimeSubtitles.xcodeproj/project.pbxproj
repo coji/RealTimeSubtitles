@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E310C10B2C32B03600B22941 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = E310C10A2C32B03600B22941 /* RealityKitContent */; };
+		E310C10D2C32B03600B22941 /* RealTimeSubtitlesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310C10C2C32B03600B22941 /* RealTimeSubtitlesApp.swift */; };
+		E310C10F2C32B03600B22941 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310C10E2C32B03600B22941 /* ContentView.swift */; };
+		E310C1112C32B03800B22941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E310C1102C32B03800B22941 /* Assets.xcassets */; };
+		E310C1142C32B03800B22941 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E310C1132C32B03800B22941 /* Preview Assets.xcassets */; };
+		E310C11F2C32B03800B22941 /* RealTimeSubtitlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310C11E2C32B03800B22941 /* RealTimeSubtitlesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E310C11B2C32B03800B22941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E310C0FD2C32B03600B22941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E310C1042C32B03600B22941;
+			remoteInfo = RealTimeSubtitles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E310C1052C32B03600B22941 /* RealTimeSubtitles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeSubtitles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E310C1092C32B03600B22941 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		E310C10C2C32B03600B22941 /* RealTimeSubtitlesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeSubtitlesApp.swift; sourceTree = "<group>"; };
+		E310C10E2C32B03600B22941 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E310C1102C32B03800B22941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E310C1132C32B03800B22941 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E310C1152C32B03800B22941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E310C11A2C32B03800B22941 /* RealTimeSubtitlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeSubtitlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E310C11E2C32B03800B22941 /* RealTimeSubtitlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeSubtitlesTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E310C1022C32B03600B22941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E310C10B2C32B03600B22941 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E310C1172C32B03800B22941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E310C0FC2C32B03600B22941 = {
+			isa = PBXGroup;
+			children = (
+				E310C1072C32B03600B22941 /* RealTimeSubtitles */,
+				E310C1082C32B03600B22941 /* Packages */,
+				E310C11D2C32B03800B22941 /* RealTimeSubtitlesTests */,
+				E310C1062C32B03600B22941 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E310C1062C32B03600B22941 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E310C1052C32B03600B22941 /* RealTimeSubtitles.app */,
+				E310C11A2C32B03800B22941 /* RealTimeSubtitlesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E310C1072C32B03600B22941 /* RealTimeSubtitles */ = {
+			isa = PBXGroup;
+			children = (
+				E310C10C2C32B03600B22941 /* RealTimeSubtitlesApp.swift */,
+				E310C10E2C32B03600B22941 /* ContentView.swift */,
+				E310C1102C32B03800B22941 /* Assets.xcassets */,
+				E310C1152C32B03800B22941 /* Info.plist */,
+				E310C1122C32B03800B22941 /* Preview Content */,
+			);
+			path = RealTimeSubtitles;
+			sourceTree = "<group>";
+		};
+		E310C1082C32B03600B22941 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E310C1092C32B03600B22941 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		E310C1122C32B03800B22941 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E310C1132C32B03800B22941 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E310C11D2C32B03800B22941 /* RealTimeSubtitlesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E310C11E2C32B03800B22941 /* RealTimeSubtitlesTests.swift */,
+			);
+			path = RealTimeSubtitlesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E310C1042C32B03600B22941 /* RealTimeSubtitles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E310C1222C32B03800B22941 /* Build configuration list for PBXNativeTarget "RealTimeSubtitles" */;
+			buildPhases = (
+				E310C1012C32B03600B22941 /* Sources */,
+				E310C1022C32B03600B22941 /* Frameworks */,
+				E310C1032C32B03600B22941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimeSubtitles;
+			packageProductDependencies = (
+				E310C10A2C32B03600B22941 /* RealityKitContent */,
+			);
+			productName = RealTimeSubtitles;
+			productReference = E310C1052C32B03600B22941 /* RealTimeSubtitles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E310C1192C32B03800B22941 /* RealTimeSubtitlesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E310C1252C32B03800B22941 /* Build configuration list for PBXNativeTarget "RealTimeSubtitlesTests" */;
+			buildPhases = (
+				E310C1162C32B03800B22941 /* Sources */,
+				E310C1172C32B03800B22941 /* Frameworks */,
+				E310C1182C32B03800B22941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E310C11C2C32B03800B22941 /* PBXTargetDependency */,
+			);
+			name = RealTimeSubtitlesTests;
+			productName = RealTimeSubtitlesTests;
+			productReference = E310C11A2C32B03800B22941 /* RealTimeSubtitlesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E310C0FD2C32B03600B22941 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E310C1042C32B03600B22941 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E310C1192C32B03800B22941 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E310C1042C32B03600B22941;
+					};
+				};
+			};
+			buildConfigurationList = E310C1002C32B03600B22941 /* Build configuration list for PBXProject "RealTimeSubtitles" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E310C0FC2C32B03600B22941;
+			productRefGroup = E310C1062C32B03600B22941 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E310C1042C32B03600B22941 /* RealTimeSubtitles */,
+				E310C1192C32B03800B22941 /* RealTimeSubtitlesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E310C1032C32B03600B22941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E310C1142C32B03800B22941 /* Preview Assets.xcassets in Resources */,
+				E310C1112C32B03800B22941 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E310C1182C32B03800B22941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E310C1012C32B03600B22941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E310C10F2C32B03600B22941 /* ContentView.swift in Sources */,
+				E310C10D2C32B03600B22941 /* RealTimeSubtitlesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E310C1162C32B03800B22941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E310C11F2C32B03800B22941 /* RealTimeSubtitlesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E310C11C2C32B03800B22941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E310C1042C32B03600B22941 /* RealTimeSubtitles */;
+			targetProxy = E310C11B2C32B03800B22941 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E310C1202C32B03800B22941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		E310C1212C32B03800B22941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+		E310C1232C32B03800B22941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealTimeSubtitles/Preview Content\"";
+				DEVELOPMENT_TEAM = BW3D5X9E68;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.techtalk.RealTimeSubtitles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		E310C1242C32B03800B22941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealTimeSubtitles/Preview Content\"";
+				DEVELOPMENT_TEAM = BW3D5X9E68;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.techtalk.RealTimeSubtitles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		E310C1262C32B03800B22941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW3D5X9E68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.techtalk.RealTimeSubtitlesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimeSubtitles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RealTimeSubtitles";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		E310C1272C32B03800B22941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW3D5X9E68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.techtalk.RealTimeSubtitlesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimeSubtitles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RealTimeSubtitles";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E310C1002C32B03600B22941 /* Build configuration list for PBXProject "RealTimeSubtitles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E310C1202C32B03800B22941 /* Debug */,
+				E310C1212C32B03800B22941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E310C1222C32B03800B22941 /* Build configuration list for PBXNativeTarget "RealTimeSubtitles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E310C1232C32B03800B22941 /* Debug */,
+				E310C1242C32B03800B22941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E310C1252C32B03800B22941 /* Build configuration list for PBXNativeTarget "RealTimeSubtitlesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E310C1262C32B03800B22941 /* Debug */,
+				E310C1272C32B03800B22941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E310C10A2C32B03600B22941 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E310C0FD2C32B03600B22941 /* Project object */;
+}
