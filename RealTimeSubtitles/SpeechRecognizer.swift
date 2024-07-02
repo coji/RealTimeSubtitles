@@ -14,33 +14,53 @@ class SpeechRecognizer: ObservableObject {
     private var audioEngine = AVAudioEngine()
 
     @Published var recognizedText = ""
+    @Published var info = ""
+    @Published var error = ""
+    @Published var isRecognizing = false
 
     func startRecognition() {
-        self.recognizedText = "Start recognition"
-        SFSpeechRecognizer.requestAuthorization { authStatus in
+        SFSpeechRecognizer.requestAuthorization { [weak self] authStatus in
+            guard let self = self else { return }
             if authStatus == .authorized {
                 self.startRecording()
             } else {
-                // Handle the error
+                DispatchQueue.main.async {
+                    self.error = "音声認識の認証が許可されませんでした。"
+                }
             }
         }
     }
 
     private func startRecording() {
+        DispatchQueue.main.async {
+            self.recognizedText = ""
+            self.error = ""
+            self.info = ""
+        }
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         guard let recognitionRequest = recognitionRequest else { return }
 
         let inputNode = audioEngine.inputNode
         let recordingFormat = inputNode.outputFormat(forBus: 0)
-        inputNode.removeTap(onBus: 0) // 既存のタップを削除
+        if recordingFormat.sampleRate == 0.0 {
+            DispatchQueue.main.async {
+                self.error = "サンプルレートがゼロです"
+            }
+            return
+        }
+        inputNode.removeTap(onBus: 0)
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
             recognitionRequest.append(buffer)
         }
 
         audioEngine.prepare()
         try? audioEngine.start()
+        DispatchQueue.main.async {
+            self.isRecognizing = true
+        }
 
-        recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest) { result, error in
+        recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest) { [weak self] result, error in
+            guard let self = self else { return }
             if let result = result {
                 DispatchQueue.main.async {
                     self.recognizedText = result.bestTranscription.formattedString
@@ -57,6 +77,7 @@ class SpeechRecognizer: ObservableObject {
         audioEngine.inputNode.removeTap(onBus: 0)
         recognitionRequest?.endAudio()
         recognitionTask?.cancel()
-        self.recognizedText = "Recognition stopped"
+        self.recognizedText = ""
+        self.isRecognizing = false
     }
 }

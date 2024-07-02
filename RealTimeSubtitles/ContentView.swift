@@ -11,24 +11,19 @@ struct ContentView: View {
     @StateObject private var speechRecognizer = SpeechRecognizer()
 
     var body: some View {
+        // 字幕表示エリア
         VStack {
-            Text(speechRecognizer.recognizedText)
+            Spacer()
+            Text("\(speechRecognizer.recognizedText)")
+                .font(.extraLargeTitle)
                 .padding()
                 .background(Color.black.opacity(0.7))
                 .foregroundColor(.white)
                 .cornerRadius(10)
-                .padding()
+                .padding(.bottom, 50) // 下部に固定
 
-            Button(action: {
-                speechRecognizer.startRecognition()
-            }) {
-                Text("Start Recognition")
-            }
-
-            Button(action: {
-                speechRecognizer.stopRecognition()
-            }) {
-                Text("Stop Recognition")
+            Toggle(isOn: $speechRecognizer.isRecognizing) {
+                Text("音声認識")
             }
         }
         .onAppear {
